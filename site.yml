@@ -1,0 +1,11 @@
+---
+
+- name: Install rundeck
+  hosts: nodes
+  remote_user: root
+# You can change remote_user to any non-root user with sudo
+# privileges and add the become: true option as show below
+# become: true
+
+  roles:
+    - install_rundeck

@@ -1,0 +1,7 @@
+---
+
+- name: Install EPEL to ensure Java package is available
+  yum: name=epel-release state=installed
+
+- name: Install OpenJDK 1.8.0
+  yum: name=java-1.8.0-openjdk state=installed

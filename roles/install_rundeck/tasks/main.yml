@@ -1,0 +1,5 @@
+---
+# tasks file for rundeck
+
+- include: dependencies.yml
+- include: install_rundeck.yml

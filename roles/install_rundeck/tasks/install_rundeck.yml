@@ -1,0 +1,11 @@
+---
+
+- name: Set up rundeck repo
+  template: src=rundeck.repo.j2 dest=/etc/yum.repos.d/rundeck.repo
+
+- name: Install rundeck
+  yum: name=rundeck state=installed
+
+- name: enable and start rundeck
+  service: name=rundeckd state=enabled state=started
+
