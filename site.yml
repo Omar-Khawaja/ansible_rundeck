@@ -1,6 +1,6 @@
 ---
 
-- name: Install rundeck
+- name: Install Rundeck
   hosts: nodes
   remote_user: root
 # You can change remote_user to any non-root user with sudo
